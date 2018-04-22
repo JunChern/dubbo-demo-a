@@ -9,8 +9,8 @@
 	<dubbo:application name="edu-web-boss" />
 
 	<!-- 使用zookeeper注册中心暴露服务地址 -->
-	<!-- 注册中心地址 -->
-	<dubbo:registry protocol="zookeeper" address="192.168.174.200:2181" />
+	<!-- 注册中心地址 192.168.233.128 -->
+	<dubbo:registry protocol="zookeeper" address="127.0.0.1:2181" />
 	
 	<!-- 用户服务接口 -->
 	<dubbo:reference interface="wusc.edu.facade.user.service.PmsUserFacade" id="pmsUserFacade" check="false" />
